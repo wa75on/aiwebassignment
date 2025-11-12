@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markdown Supremacy — Plain Text. Infinite Power.</title>
+  <link href="markdown-tribute.css" rel="stylesheet" />
+  <!-- No external fonts; use a spicy monospace stack -->
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav class="mk-nav" id="navbar">
+    <div class="mk-nav__inner">
+      <a class="mk-logo" href="#home">MARKDOWN ⚡ SUPREMACY</a>
+      <button class="mk-burger" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="mk-links" id="navLinks">
+        <li><a class="nav-link" href="#home">HOME</a></li>
+        <li><a class="nav-link" href="#why">WHY MD</a></li>
+        <li><a class="nav-link" href="#wins">HOW IT WINS</a></li>
+        <li><a class="nav-link" href="#try">TRY IT</a></li>
+        <li><a class="nav-link" href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="orbs" aria-hidden="true">
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+      <span class="orb orb-c"></span>
+    </div>
+    <div class="hero__content">
+      <h1 class="type" data-type="Plain text. Infinite power.">Plain text. Infinite power.</h1>
+      <p class="tag">Stop shipping snowglobes. Start shipping text.</p>
+      <div class="hero__cta">
+        <a href="#why" class="btn btn-primary">WHY MARKDOWN</a>
+        <a href="#try" class="btn btn-ghost">LIVE DEMO</a>
+      </div>
+      <div class="hero__badges">
+        <span class="badge"># portable</span>
+        <span class="badge"># readable</span>
+        <span class="badge"># versionable</span>
+        <span class="badge"># futureproof</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MARKDOWN -->
+  <section id="why" class="why section">
+    <div class="container">
+      <header class="section__head">
+        <div class="section__kicker">No lock‑in, no drama</div>
+        <h2>Markdown just works. Everywhere.</h2>
+      </header>
+
+      <div class="features">
+        <article class="card fade-in">
+          <div class="card__icon" aria-hidden="true">
+            <!-- Inline SVG: file -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M7 9h4v6H7zM13 15l2-2 2 2 2-2" />
+            </svg>
+          </div>
+          <h3>Portable AF</h3>
+          <p>It’s plain text. Your fridge can open it. Phones, clouds, toasters—no problem.</p>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card__icon" aria-hidden="true">
+            <!-- Inline SVG: eye -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12Z" />
+              <circle cx="12" cy="12" r="3.5" />
+            </svg>
+          </div>
+          <h3>Readable Raw</h3>
+          <p>No mystery meat formatting. Open the file, actually read it. Wild.</p>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card__icon" aria-hidden="true">
+            <!-- Inline SVG: branch -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="6" cy="6" r="2.5" /><circle cx="18" cy="6" r="2.5" /><circle cx="12" cy="18" r="2.5" />
+              <path d="M6 8v6a6 6 0 0 0 6 6M18 8v2a6 6 0 0 1-6 6" />
+            </svg>
+          </div>
+          <h3>Git Native</h3>
+          <p>Diffs that make sense. Branches without tears. PRs that slap.</p>
+        </article>
+
+        <article class="card fade-in">
+          <div class="card__icon" aria-hidden="true">
+            <!-- Inline SVG: shield -->
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 3l8 3v6c0 5-3 8-8 9-5-1-8-4-8-9V6l8-3Z" />
+            </svg>
+          </div>
+          <h3>Futureproof</h3>
+          <p>In 20 years your files still open. Can your “.whatever” say the same?</p>
+        </article>
+      </div>
+
+      <div class="code-promo">
+        <pre class="code"><code># Markdown
+> Minimal syntax, maximal vibes.
+
+- Fast to write
+- Easy to read
+- Converts to anything
+
+**Hot take:** PDFs are screenshots. Markdown is content.</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WINS / COMPARISON -->
+  <section id="wins" class="wins section">
+    <div class="container">
+      <header class="section__head alt">
+        <div class="section__kicker">Receipts included</div>
+        <h2>Why Markdown keeps winning</h2>
+      </header>
+
+      <div class="compare">
+        <article class="panel good">
+          <h4>Markdown</h4>
+          <ul>
+            <li><span>✔</span> Portable plain text</li>
+            <li><span>✔</span> Human‑readable diffs</li>
+            <li><span>✔</span> Easy automation</li>
+            <li><span>✔</span> Works offline, online, anywhere</li>
+          </ul>
+        </article>
+        <article class="panel meh">
+          <h4>.docx</h4>
+          <ul>
+            <li><span>✖</span> Bloated binary bundle</li>
+            <li><span>✖</span> Surprise formatting</li>
+            <li><span>✖</span> Vendor lock‑in energy</li>
+            <li><span>✖</span> Corruption jumpscare</li>
+          </ul>
+        </article>
+        <article class="panel hmm">
+          <h4>PDF</h4>
+          <ul>
+            <li><span>±</span> Great for freezing layout</li>
+            <li><span>✖</span> Not editable without pain</li>
+            <li><span>✖</span> Accessibility is… a journey</li>
+            <li><span>✖</span> Basically a picture of text</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE DEMO -->
+  <section id="try" class="try section">
+    <div class="container">
+      <header class="section__head">
+        <div class="section__kicker">Hands on</div>
+        <h2>Try Markdown — right here</h2>
+      </header>
+
+      <div class="demo">
+        <div class="editor">
+          <textarea id="mdInput" aria-label="Markdown input"># Hello, Markdown
+
+Write some *spicy* text, **bold opinions**, and `code`.
+
+- Lists? easy
+- Links? [like this](https://example.com)
+
+> Gen Z approved. Minimal and maximal simultaneously.
+</textarea>
+        </div>
+        <div class="preview" id="mdPreview" aria-live="polite"></div>
+      </div>
+
+      <div class="demo__tips">
+        <span class="tip">Tip: #, ##, ### for headings</span>
+        <span class="tip">Tip: **bold** and *italic*</span>
+        <span class="tip">Tip: `inline code` blocks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <header class="section__head alt">
+        <div class="section__kicker">Join the movement</div>
+        <h2>Ship text. Not drama.</h2>
+      </header>
+
+      <form class="mini-form" id="miniForm">
+        <div class="field">
+          <input type="text" required placeholder=" ">
+          <label>Name (no .docx allowed)</label>
+        </div>
+        <div class="field">
+          <input type="email" required placeholder=" ">
+          <label>Email</label>
+        </div>
+        <div class="field">
+          <textarea rows="4" required placeholder=" "></textarea>
+          <label>Your Markdown success story</label>
+        </div>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="mk-footer">
+    <p>© 2025 Markdown Supremacy — Powered by plain text and petty opinions.</p>
+    <p><a class="back-link" href="index.html">Back to the .docx roast →</a></p>
+  </footer>
+
+  <script src="markdown-tribute.js"></script>
+</body>
+</html>
