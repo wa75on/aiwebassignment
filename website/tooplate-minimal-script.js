@@ -95,6 +95,6 @@ https://www.tooplate.com/view/2141-minimal-white
         // Form submission (prevent default for demo)
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Message sent successfully!');
+            alert('Your MS Word rant has been received! We feel you fam 💯');
             this.reset();
         });
