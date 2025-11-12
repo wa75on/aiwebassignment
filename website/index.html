@@ -1,288 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Hate MS Word</title>
-    <link href="tooplate-minimal-white-style.css" rel="stylesheet">
-    
-<!--
-
-Tooplate 2141 Minimal White
-
-https://www.tooplate.com/view/2141-minimal-white
-
-Free HTML CSS Template
-
--->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dear Professors — A Markdown Plea</title>
+  <link rel="stylesheet" href="styles/plea.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">I HATE .DOCX</a>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link">HOME</a></li>
-                <li><a href="#about" class="nav-link">THE ISSUES</a></li>
-                <li><a href="#services" class="nav-link">BETTER OPTIONS</a></li>
-                <li><a href="#contact" class="nav-link">RANT</a></li>
-                <li><a href="markdown.html" class="nav-link">MARKDOWN</a></li>
-                <li><a href="plea.html" class="nav-link">PLEA</a></li>
-            </ul>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#intro" class="logo">DEAR PROFESSORS</a>
+      <button class="burger" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="links" id="navLinks">
+        <li><a class="nav-link" href="#intro">INTRO</a></li>
+        <li><a class="nav-link" href="#pain">PAIN</a></li>
+        <li><a class="nav-link" href="#timeline">JOURNEY</a></li>
+        <li><a class="nav-link" href="#harmony">HARMONY</a></li>
+        <li><a class="nav-link" href="#choice">CHOICE</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Cinematic intro: pitch black bg, inline images -->
+  <section id="intro" class="section hero black">
+    <div class="container center">
+      <header class="head">
+        <p class="kicker">📧 real talk from a broke college kid</p>
+        <h1>POV: you just slayed that essay and then... <em>BOOM</em></h1>
+        <p class="sub">Professor hits you with: <strong>.docx ONLY</strong>. Instant L moment, sad violin plays, you question your life choices.</p>
+      </header>
+
+      <div class="lineup">
+        <img class="gang-img" style="--h:100px" src="images/gang1.jpeg" alt="Gang 1" />
+        <img class="gang-img" style="--h:140px" src="images/gang2.jpeg" alt="Gang 2" />
+        <img class="gang-img" style="--h:180px" src="images/gang3.jpeg" alt="Gang 3" />
+        <img class="center-reaction" src="images/my_reaction_to_only_accepting_docx.jpg" alt="My soul leaving my body" />
+        <img class="gang-img" style="--h:180px" src="images/gang4.jpeg" alt="Gang 4" />
+        <img class="gang-img" style="--h:140px" src="images/gang5.jpeg" alt="Gang 5" />
+        <img class="gang-img" style="--h:100px" src="images/gang6.jpeg" alt="Gang 6" />
+      </div>
+      <p class="caption">⚠️ <em>The Format Enforcement Squad™</em> has entered the chat. They don't negotiate.</p>
+    </div>
+  </section>
+
+  <!-- Pain section: converter misery -->
+  <section id="pain" class="section black">
+    <div class="container">
+      <header class="head">
+        <div class="kicker">🔥 converter hell is REAL</div>
+        <h2>Turning Markdown into "other formats" is straight up cursed</h2>
+        <p class="sub">Like fr, it's pure agony. The kind of suffering that makes you question everything.</p>
+      </header>
+
+      <div class="split">
+        <div class="split__text fade-in">
+          <h3>It's like trying to explain TikTok to your grandma using cave paintings.</h3>
+          <p>
+            Headers start glitching out. Lists do the cha-cha across the page. Images ghost you harder than that ex. Hit export and POOF — your clean 2KB file balloons to a 12MB nightmare with fonts that look like they crawled out of 1998 and spacing that's actively plotting against you.
+          </p>
+          <ul>
+            <li>💀 Random spacing jumpscares that ruin your whole vibe</li>
+            <li>🤡 Fonts that clash harder than pineapple on pizza</li>
+            <li>😭 Tables that take it personally and start a rebellion</li>
+          </ul>
         </div>
-    </nav>
-
-    <!-- Section 1: Hero -->
-    <section id="home" class="hero">
-        <!-- Animated Objects (Reduced) -->
-        <div class="floating-objects">
-            <div class="floating-circle"></div>
-            <div class="floating-circle"></div>
-            <div class="floating-square"></div>
-            <div class="floating-line"></div>
+        <div class="split__media">
+          <img class="shake" src="images/average_markdown_to_other_file_converter_experience.jpeg" alt="Converter experience be like" />
         </div>
-        
-        <div class="hero-decoration"></div>
-        <div class="hero-content">
-            <h1>Down with .docx</h1>
-            <p class="subtitle">A Digital Nightmare Since 2007</p>
-            <a href="#about" class="cta-button">READ THE TRUTH</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey / Timeline with interactive stages -->
+  <section id="timeline" class="section white">
+    <div class="container">
+      <header class="head">
+        <div class="kicker">✨ the glow-up arc we all deserve</div>
+        <h2>From .docx simp to Markdown king/queen</h2>
+        <p class="sub">Hover the stages and watch the transformation. It's giving main character energy.</p>
+      </header>
+
+      <div class="timeline v2">
+        <div class="bar" id="timelineBar">
+          <div class="line"></div>
+          <button class="stage node" style="--bg-img:url('images/average_docx_user.jpeg')" data-level="1" data-img="images/average_docx_user.jpeg" data-caption="Stage 1 — Average .docx user, blissfully unaware they're using bad software. Living their best ignorant life.">
+            <span class="label">😴 .docx believer</span>
+          </button>
+          <button class="stage node" style="--bg-img:url('images/first_reaction_to_markdown.jpeg')" data-level="2" data-img="images/first_reaction_to_markdown.jpeg" data-caption="Stage 2 — Shocked hammy getting dragged outside its comfort zone. The first contact with Markdown is… jarring.">
+            <span class="label">😳 first contact</span>
+          </button>
+          <button class="stage node" style="--bg-img:url('images/still_a_hammy.jpeg')" data-level="3" data-img="images/still_a_hammy.jpeg" data-caption="Stage 3 — Schizo hammy barely comprehending the greatness of Markdown. Brain is recalibrating, reality is shifting.">
+            <span class="label">😤 reckoning</span>
+          </button>
+          <button class="stage node" style="--bg-img:url('images/refined_gentleman.jpeg')" data-level="4" data-img="images/refined_gentleman.jpeg" data-caption="Stage 4 — Gigachad Markdown enjoyer. Fully ascended. Enlightened. Peak productivity unlocked. ✨">
+            <span class="label">🧘 ascension</span>
+          </button>
         </div>
-    </section>
-
-    <!-- Section 2: About - Mixed Layouts -->
-    <section id="about" class="about">
-        <div class="container">
-            <!-- Introduction with large quote -->
-            <div class="about-intro fade-in">
-                <div class="quote-block">
-                    <span class="quote-mark">"</span>
-                    <h3>MS Word is like a toxic ex that keeps corrupting your files and gaslighting you about formatting.</h3>
-                    <div class="quote-author">
-                        <span class="author-line"></span>
-                        <p>Every College Student Ever</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="black-line"></div>
-
-            <!-- Stats Section -->
-            <div class="stats-grid fade-in">
-                <div class="stat-item">
-                    <div class="stat-number">10GB</div>
-                    <div class="stat-label">Wasted Storage on .docx</div>
-                    <div class="stat-decoration"></div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">∞</div>
-                    <div class="stat-label">Formatting Errors</div>
-                    <div class="stat-decoration"></div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">File Corruption Anxiety</div>
-                    <div class="stat-decoration"></div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">0%</div>
-                    <div class="stat-label">Chance I'll Use It Again</div>
-                    <div class="stat-decoration"></div>
-                </div>
-            </div>
-
-            <!-- Philosophy Section with offset layout -->
-            <div class="philosophy-section fade-in">
-                <div class="philosophy-header">
-                    <h2>The Problems</h2>
-                    <div class="header-decoration"></div>
-                </div>
-                <div class="philosophy-content">
-                    <div class="philosophy-main">
-                        <p class="lead-text">MS Word and .docx files are the digital equivalent of a Karen asking for the manager. They're bloated, proprietary, and somehow still can't handle basic formatting without losing their minds.</p>
-                    </div>
-                    <div class="philosophy-points">
-                        <div class="point-item">
-                            <span class="point-number">01</span>
-                            <h4>File Corruption</h4>
-                            <p>Your 50-page thesis? Gone. Poof. Thanks for nothing.</p>
-                        </div>
-                        <div class="point-item">
-                            <span class="point-number">02</span>
-                            <h4>Proprietary Format</h4>
-                            <p>Because who needs open standards when you can force people to buy Office?</p>
-                        </div>
-                        <div class="point-item">
-                            <span class="point-number">03</span>
-                            <h4>Formatting Hell</h4>
-                            <p>Moved an image? Congrats, your entire document is now chaos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Process Timeline -->
-            <div class="process-timeline fade-in">
-                <h2 class="section-subtitle">The .docx Experience</h2>
-                <div class="timeline-container">
-                    <div class="timeline-line"></div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>Open File</h4>
-                            <p>It looks fine... for now</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>Edit Something</h4>
-                            <p>Watch formatting implode</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>Panic</h4>
-                            <p>Ctrl+Z doesn't fix this mess</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>Cry</h4>
-                            <p>File won't open anymore lol</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Values Grid -->
-            <div class="values-section fade-in">
-                <div class="values-header">
-                    <div class="black-square"></div>
-                    <h2>What We Hate Most</h2>
-                    <div class="black-square"></div>
-                </div>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">💀</div>
-                        <h4>Bloated Files</h4>
-                    </div>
-                    <div class="value-card black">
-                        <div class="value-icon">🤮</div>
-                        <h4>Compatibility Issues</h4>
-                    </div>
-                    <div class="value-card black">
-                        <div class="value-icon">😤</div>
-                        <h4>Hidden Metadata</h4>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🚮</div>
-                        <h4>Vendor Lock-in</h4>
-                    </div>
-                </div>
-            </div>
+        <div class="stage-reveal" id="stageReveal">
+          <img id="stageImg" src="images/average_docx_user.jpeg" alt="Stage visual" />
+          <p id="stageDesc">Stage 1 — Average .docx user, blissfully unaware they're using bad software. Living their best ignorant life.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Section 3: Services - Asymmetric Grid -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="services-header fade-in">
-                <h2>Better Alternatives</h2>
-            </div>
-            
-            <div class="asymmetric-grid fade-in">
-                <div class="service-large">
-                    <h3>Google Docs</h3>
-                    <p>Hot take: Google Docs is actually fire. Real-time collab, cloud auto-save, works on literally any device, and guess what? It doesn't randomly corrupt your files at 3am before your deadline. Wild concept, right?</p>
-                    <a href="#contact" class="service-tag">Free & Based</a>
-                </div>
-                <div class="service-small">
-                    <div class="service-number">01</div>
-                    <h4>Cloud Native</h4>
-                </div>
-            </div>
-            
-            <div class="asymmetric-grid reverse fade-in">
-                <div class="service-small">
-                    <div class="service-number">02</div>
-                    <h4>Plain Text FTW</h4>
-                </div>
-                <div class="service-large">
-                    <h3>Markdown</h3>
-                    <p>For the intellectuals: Markdown is chef's kiss. Simple, portable, version-control friendly, and you can actually read the raw file without selling your soul to Microsoft. Plus it looks clean af.</p>
-                    <a href="#contact" class="service-tag">Elite Choice</a>
-                </div>
-            </div>
-            
-            <div class="asymmetric-grid fade-in">
-                <div class="service-large">
-                    <h3>LaTeX</h3>
-                    <p>Okay hear me out - LaTeX is the final boss of document creation. Yeah it's got a learning curve but at least when you move an image, your entire bibliography doesn't teleport to Mars. Plus your papers look absolutely immaculate.</p>
-                    <a href="#contact" class="service-tag">Pro Mode</a>
-                </div>
-                <div class="service-small">
-                    <div class="service-number">03</div>
-                    <h4>Academic Weapon</h4>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Harmony vision -->
+  <section id="harmony" class="section white">
+    <div class="container center">
+      <header class="head">
+        <div class="kicker">🌈 the dream world we're all sleeping on</div>
+        <h2>Imagine if everyone just... got it</h2>
+        <p class="sub">No more format wars. Just pure, clean, accessible vibes. Zero drama, maximum peace.</p>
+      </header>
+      <figure class="poster">
+        <img src="images/get_along.jpeg" alt="Everyone vibing together" />
+        <figcaption>POV: Society if we all ditched .docx for Markdown. World peace? Bet. 🕊️</figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <!-- Section 4: Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid fade-in">
-                <div class="contact-info">
-                    <h2>Share Your Pain</h2>
-                    <div class="info-item">
-                        <h4>Email</h4>
-                        <p>hate@msword.com</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>Therapy Line</h4>
-                        <p>1-800-DOCX-SUX</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>Support Group</h4>
-                        <p>Discord, obvs</p>
-                    </div>
-                </div>
-                
-                <div class="contact-divider"></div>
-                
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder=" " required>
-                            <label>Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder=" " required>
-                            <label>Email</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="4" placeholder=" " required></textarea>
-                            <label>Your MS Word Horror Story</label>
-                        </div>
-                        <button type="submit" class="submit-btn">Vent</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- The choice -->
+  <section id="choice" class="section choice">
+    <div class="container center">
+      <header class="head">
+        <div class="kicker">🎭 morpheus voice: activated</div>
+        <h2>So... you taking the pill or nah?</h2>
+        <p class="sub">No biggie. Just your entire academic future and sanity hanging in the balance. NBD.</p>
+      </header>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Anti-Word Movement — No .docx Files Were Harmed in the Making of This Site (because we don't use them)</p>
-    </footer>
-<script src="tooplate-minimal-script.js"></script>
+      <div class="pills">
+        <a class="pill pill--docx" href="pages/docx-hell.html">
+          <span class="pill__label">💊 The .docx pill</span>
+          <span class="pill__hint">Stay in your comfort zone</span>
+          <img class="pill__img" src="images/take_the_docx_pill.jpeg" alt="Blue pill of ignorance" />
+        </a>
+        <a class="pill pill--md" href="pages/markdown.html">
+          <span class="pill__label">💊 The Markdown pill</span>
+          <span class="pill__hint">Wake up to the real deal</span>
+          <img class="pill__img" src="images/take_the_markdown_pill.jpeg" alt="Red pill of enlightenment" />
+        </a>
+      </div>
+
+      <p class="fineprint">⚠️ Markdown side effects: better sleep, clean git diffs, zero formatting meltdowns, and productivity that slaps. Choose your fighter.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 — With love and plain text.</p>
+  </footer>
+
+  <script src="scripts/plea.js"></script>
 </body>
 </html>
